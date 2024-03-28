@@ -2,14 +2,29 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JuliaAV.MainPage"
-             xmlns:ios="clr-namespace:Microsoftft"
+             xmlns:ios="clr-namespace:Microsoftft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="False"
+             Shell.NavBarIsVisible="False"
              BackgroundColor="#4e7fab"
-             Shell.NavBarIsVisible="false">
+<Grid IgnoresSafeArea="True">
 
-    <Grid>
-        <Image Source="blackcatwithyelloweyes"
-                Aspect="AspectFill"/>
-    <Label Text="Pawsome Playtime" 
+        <Image x:Name="imgCharacter"
+                 Source="blackcatwithyelloweye.jpg"
+                 HeightRequest="400"
+                 Margin="0"
+                 Aspect="AspectFill"
+                 VerticalOptions="End"
+
+         <Grid  Margin="20, 50, 20, 0"
+                ColumnSpacing="10"
+                RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            <Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>   
+    
 
 
    
