@@ -23,8 +23,53 @@
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
             <Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>   
+            <Grid.ColumnDefinitions> 
+                <ColumnDefinition Width="30"
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
     
+        <image Source="bolinha.png"
+                 HeightRequest="30"
+                 Aspect="AspectFit"
+                Grid.Row="0"
+                Grid.Column="0"/>   
+             <Progressbar x:Name="progressBarSadness"
+                 Progress="1"
+                 BackgroundColor="White"
+                 ProgressColor="Green"
+                 Grid.Row="0"
+                 Grid.Column="1"/>
+
+                 <image Source="food.png"
+                 HeightRequest="50"
+                 Aspect="AspectFit"
+                Grid.Row="1"
+                Grid.Column="0"/>   
+             <Progressbar x:Name="progressBarThursty"
+                 Progress="1"
+                 HeightRequest="10"
+                 ProgressColor="Brown"
+                 Grid.Row="1"
+                 Grid.Column="1"/>
+
+
+                 <image Source="whater.png"
+                 HeightRequest="50"
+                 Aspect="AspectFit"
+                Grid.Row="1"
+                Grid.Column="0"/>   
+             <Progressbar x:Name="progressBarThursty"
+                 Progress="1"
+                 HeightRequest="10"
+                 ProgressColor="Blue"
+                 Grid.Row="2"
+                 Grid.Column="1"/>
+
+</Grid>          
+
+<Frame BackgroundColor="#a6cd89"
+       BorderColor=
+
 
 
    
