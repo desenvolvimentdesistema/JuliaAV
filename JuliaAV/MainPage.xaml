@@ -5,7 +5,7 @@
              xmlns:ios="clr-namespace:Microsoftft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
              ios:Page.UseSafeArea="False"
              Shell.NavBarIsVisible="False"
-             BackgroundColor="#4e7fab"
+             BackgroundColor="Chantilly"
 <Grid IgnoresSafeArea="True">
 
         <Image x:Name="imgCharacter"
@@ -14,6 +14,7 @@
                  Margin="0"
                  Aspect="AspectFill"
                  VerticalOptions="End"
+                
 
          <Grid  Margin="20, 50, 20, 0"
                 ColumnSpacing="10"
@@ -67,9 +68,57 @@
 
 </Grid>          
 
-<Frame BackgroundColor="#a6cd89"
-       BorderColor=
+            <Frame  BackgroundColor="Chantilly"
+                    BorderColor="Black"
+                    WidthRequest="70"
+                    Padding="5, 20"
+                    Margin="0,-40,5,0"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    CornerRadius="30">
+                <Grid RowSpacing="20">
+                   <Grid.RowDefinitions>
+                       <RowDefinition Height="50"/>
+                       <RowDefinition Height="50"/>
+                       <RowDefinition Height="50"/>
+                       <RowDefinition Height="50"/>        
+                    </Grid.RowDefinitions>
 
+                    <ImageButton Source="seta.png"
+                                 Clicked="OnChangeCharacterClick"
+                                 HeightRequest="50"
+                                 WidthRequest="50"
+                                 CornerRadius="25"
+                                 Grid.Row="0"/>
+
+                    <ImageButton Source="whater.png"
+                                 Clicked="OnDrinkClicked"
+                                 HeightRequest="50"
+                                 WidthRequest="50"
+                                 CornerRadius="25"
+                                 Grid.Row="1"/>
+
+                    <ImageButton Source="food.png"
+                                 Clicked="OnFoodClicked"
+                                 HeightRequest="50"
+                                 WidthRequest="50"
+                                 CornerRadius="25"
+                                 Grid.Row="2"/>
+
+                    <ImageButton Source="bolinha.png"
+                                 Clicked="OnPlayClicked"
+                                 HeightRequest="50"
+                                 WidthRequest="50"
+                                 CornerRadius="25"
+                                 Grid.Row="3"/>
+
+            </Grid>
+         </Frame>
+
+      </Grid>
+
+
+    </ContentPage>             
 
 
    
