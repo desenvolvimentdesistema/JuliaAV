@@ -84,7 +84,7 @@
                        <RowDefinition Height="50"/>        
                     </Grid.RowDefinitions>
 
-                    <ImageButton Source="seta.png"
+                    <ImageButton Source="setabranca.png"
                                  Clicked="OnChangeCharacterClick"
                                  HeightRequest="50"
                                  WidthRequest="50"
