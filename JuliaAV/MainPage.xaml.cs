@@ -14,7 +14,7 @@ public partial class MainPage : ContentPage
 		imgPersonagem.Source=Atual.GetArquivo
 	}
 
-	 void OnChangeCharacterClick(object sender, EventArgs)
+	 void OnChangeCharacterClick(object sender, EventArgs args)
 	{
 		if (Atual==BlackCat)
 			Atual=OrangeCat;
@@ -24,8 +24,17 @@ public partial class MainPage : ContentPage
 			Atual=WhiteCat;
 		imgPersonagem.Source=Atual.GetArquivo();
 	}
-	 void OnDrinkClicked(object sender, EventArgs)
-	 void OnFoodClicked(object sender, EventArgs)
-	 void OnPlayClicked(object sender, EventArgs)
+	 void OnDrinkClicked(object sender, EventArgs args)
+	 {
+			frameOnDrinkClicked.IsVisible = true;
+	 }
+	 void OnFoodClicked(object sender, EventArgs args)
+	 {
+			frameOnFoodClicked.IsVisible = true;
+	 }
+	 void OnPlayClicked(object sender, EventArgs args)
+	{
+			frameOnPlayClicked.IsVisible = true;
+	}
 }
 

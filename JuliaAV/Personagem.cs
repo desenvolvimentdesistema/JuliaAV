@@ -3,10 +3,10 @@ namespace JuliaAV;
 
 public class Personagem
 {
-        protected string arquivo;
-        protected double drink;
-        protected double food;
-        protected double play;
+        protected string Arquivo;
+        protected double Drink;
+        protected double Food;
+        protected double Play;
         public string GetArquivo()
         {
             return Arquivo;
@@ -15,7 +15,7 @@ public class Personagem
         {
             return GetDrink;
         }
-        public double GetFood()
+        public double  GetFood()
         {
             return GetFood;
         }
