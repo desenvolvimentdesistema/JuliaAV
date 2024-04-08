@@ -13,14 +13,14 @@ public class Personagem
         }
         public double GetDrink()
         {
-            return GetDrink;
+            return Drink;
         }
         public double  GetFood()
         {
-            return GetFood;
+            return Food;
         }
         public double GetPlay()
         {
-            return GetPlay;
+            return Play;
         }
 }

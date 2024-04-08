@@ -24,17 +24,6 @@ public partial class MainPage : ContentPage
 			Atual=WhiteCat;
 		imgPersonagem.Source=Atual.GetArquivo();
 	}
-	 void OnDrinkClicked(object sender, EventArgs args)
-	 {
-			frameOnDrinkClicked.IsVisible = true;
-	 }
-	 void OnFoodClicked(object sender, EventArgs args)
-	 {
-			frameOnFoodClicked.IsVisible = true;
-	 }
-	 void OnPlayClicked(object sender, EventArgs args)
-	{
-			frameOnPlayClicked.IsVisible = true;
-	}
+	
 }
 
