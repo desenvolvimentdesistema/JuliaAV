@@ -10,8 +10,8 @@ public partial class MainPage : ContentPage
 		BlackCat=new BlackCat();
 		OrangeCat=new OrangeCat();
 		WhiteCat=new WhiteCat();
-		Atual=BlackCat
-		imgPersonagem.Source=Atual.GetArquivo
+		Atual=BlackCat;
+		imgCharacter.Source=Atual.GetArquivo();
 	}
 
 	 void OnChangeCharacterClick(object sender, EventArgs args)
@@ -22,8 +22,18 @@ public partial class MainPage : ContentPage
 			Atual=BlackCat;
 		else if(Atual==OrangeCat)
 			Atual=WhiteCat;
-		imgPersonagem.Source=Atual.GetArquivo();
+		imgCharacter.Source=Atual.GetArquivo();
 	}
-	
+
+public MainPage()
+{
+	var timer=Application.Current.Dispatcher.CreateTimer();
+	timer.Interval=TimeSpan.FromSeconds(1);
+	timer.Tick =+(s,e)=>PassouTempo();
 }
+void PassouTempo()
+{
+	Atual 
+}
+
 

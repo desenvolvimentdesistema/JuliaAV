@@ -2,10 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JuliaAV.MainPage"
-             xmlns:ios="clr-namespace:Microsoftft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
-             ios:Page.UseSafeArea="False"
-             Shell.NavBarIsVisible="False"
-             BackgroundColor="Chantilly"
+             BackgroundColor="#F0E8E2">
 <Grid IgnoresSafeArea="True">
 
         <Image x:Name="imgCharacter"
@@ -13,7 +10,7 @@
                  HeightRequest="400"
                  Margin="0"
                  Aspect="AspectFill"
-                 VerticalOptions="End"
+                 VerticalOptions="End"/>
                 
 
          <Grid  Margin="20, 50, 20, 0"
@@ -23,30 +20,30 @@
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
-            <Grid.RowDefinitions>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions> 
-                <ColumnDefinition Width="30"
+                <ColumnDefinition Width="30"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
     
-        <image Source="bolinha.png"
+        <Image Source="bolinha.png"
                  HeightRequest="30"
                  Aspect="AspectFit"
                 Grid.Row="0"
                 Grid.Column="0"/>   
-             <Progressbar x:Name="progressBarSadness"
+             <ProgressBar x:Name="progressBarSadness"
                  Progress="1"
                  BackgroundColor="White"
                  ProgressColor="Green"
                  Grid.Row="0"
                  Grid.Column="1"/>
 
-                 <image Source="food.png"
+                 <Image Source="food.png"
                  HeightRequest="50"
                  Aspect="AspectFit"
                 Grid.Row="1"
                 Grid.Column="0"/>   
-             <Progressbar x:Name="progressBarThursty"
+             <ProgressBar x:Name="progressBarHungry"
                  Progress="1"
                  HeightRequest="10"
                  ProgressColor="Brown"
@@ -54,12 +51,12 @@
                  Grid.Column="1"/>
 
 
-                 <image Source="whater.png"
+                 <Image Source="whater.png"
                  HeightRequest="50"
                  Aspect="AspectFit"
                 Grid.Row="1"
                 Grid.Column="0"/>   
-             <Progressbar x:Name="progressBarThursty"
+             <ProgressBar x:Name="progressBarThursty"
                  Progress="1"
                  HeightRequest="10"
                  ProgressColor="Blue"
@@ -68,7 +65,7 @@
 
 </Grid>          
 
-            <Frame  BackgroundColor="Chantilly"
+            <Frame  BackgroundColor="#F0E8E2"
                     BorderColor="Black"
                     WidthRequest="70"
                     Padding="5, 20"
