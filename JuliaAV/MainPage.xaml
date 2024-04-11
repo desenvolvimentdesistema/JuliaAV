@@ -88,21 +88,21 @@
                                  CornerRadius="25"
                                  Grid.Row="0"/>
 
-                    <ImageButton Source="whater.png"
+                    <ImageButton Source="potedeagua.jpg"
                                  Clicked="OnDrinkClicked"
                                  HeightRequest="50"
                                  WidthRequest="50"
                                  CornerRadius="25"
                                  Grid.Row="1"/>
 
-                    <ImageButton Source="food.png"
+                    <ImageButton Source="comidadegato.jpg"
                                  Clicked="OnFoodClicked"
                                  HeightRequest="50"
                                  WidthRequest="50"
                                  CornerRadius="25"
                                  Grid.Row="2"/>
 
-                    <ImageButton Source="bolinha.png"
+                    <ImageButton Source="brinquedodegato.jpg"
                                  Clicked="OnPlayClicked"
                                  HeightRequest="50"
                                  WidthRequest="50"

@@ -5,9 +5,9 @@ public class BlackCat : Personagem
         public BlackCat()
         {
                 Arquivo="blackcatwithyelloweyes.jpg";
-                Drink=0.5;
-                Food=0.5;
-                Play=0.5;
+                Drink=100;
+                Food=100;
+                Play=100;
         }
 
 }
